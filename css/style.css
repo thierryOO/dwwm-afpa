@@ -1,0 +1,284 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*ACCUEIL _______________________________________________________________________________________________________
+/*BARRE DE NAVIGATION*/
+body{
+    background-image: url(../Images/A2-1920.jpg);
+  }
+    .nav-link:hover{
+    background-color: #8fd38a;
+    border-radius: 3px;
+    text-decoration: underline;
+    font-style: italic;
+  }
+
+.main_accueil{
+   width: 70%;
+    text-align: center;
+    margin:auto;
+    padding-top: 100px;
+}
+.main_accueil > h1{
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+}
+.main_accueil > h2{
+    color: rgb(70, 241, 47);
+    text-shadow: 2px 2px 5px black;
+    font-size: 2rem;
+}
+
+.main_accueil > #accueil_titre2{
+    padding-top: 50px;
+    color: rgb(70, 241, 47);
+    text-shadow: 2px 2px 5px black;
+}
+.main_accueil > button{
+    margin-top: 150px;
+    padding-top: 10px;
+}
+#button_main {
+    display: inline-block;
+    background-color: gray;
+    opacity: 0.9;
+    border-radius: 20px;
+    border: 4px double #cccccc;
+    color: #070c06;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    padding: px;
+    width: 500px;
+    margin-top: 150px;
+}
+#button_main:hover {
+    
+    width: 550px;
+    height: 80px;
+    margin-top: 150px;
+    color: #252525;
+}
+
+/*#navbarNav .collapse .navbar-collapse{
+    margin-bottom: 5px !important;
+}*/
+
+
+/*RESPONSIVE BARRE DE NAVIGATION*/
+@media screen and (max-width: 576px) {
+
+.main_accueil h1{ 
+    font-size: 3rem;
+}
+main > #button_main {
+    font-size: 28px;
+    padding: px;
+    width: 200px;
+    margin-top: 50px;
+}
+    
+}
+
+/*FORMATION*/
+.main_formation > h1{
+    font-size: 3rem;
+    color: rgb(252, 249, 249);
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.blocFormation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   margin-left: 50px;
+   margin-right: 50px;
+   padding-top: 60px;   
+}
+
+.colFormation{
+    background: none;
+    width: 45%;
+    border-radius: 15px;
+    color: #fffbfb;
+    text-shadow: 2px 2px 3px rgb(37, 37, 37);
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+.rubriqueFormation{
+    width: 90%;
+    margin: auto;
+    background-color: rgb(168, 30, 210,.7);
+    border-radius: 8px;
+    padding-left: 15px;
+    box-shadow: 5px 5px 5px  #44A33D; 
+}
+.rubriqueFormation-Titre{
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px rgb(17, 17, 17);
+    color: #fffbfb;
+}
+.monAncre{
+    padding-top: 150px;
+}
+
+/*RESPONSIVE FORMATION*__________________________________________________________________________________________________________________*/
+
+@media screen and (max-width:768px) {
+    .blocFormation{
+        display: block;
+        padding:5px;
+        margin-left: 20px;
+       margin-right: 20px;
+    }
+    .colFormation{
+        width: 95%;
+        margin-left: 5px;
+        padding-left: 5px;
+    }
+}
+
+/*TEMOIGNAGES (bootstrap)________________________________________________________________________________________________________________*/
+.temoignage_titre h1{
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+}
+.card-img-top{
+    padding: 50px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+}
+.card{
+    margin:auto;
+}   
+.card-text{
+    text-align: justify;
+}
+
+/* REFERENCES____________________________________________________________________________________________________________________________*/
+.references_titre h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+}
+
+.gallery img{
+width: 250px;
+padding-bottom: 20px;
+}
+.gallery{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+}
+
+/*RESPONSIVE REFERENCES________________________________________________________________________*/
+@media screen and (max-width:576px){
+    .references_titre h1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 5px black;
+}
+}
+
+/* CONTACT______________________________________________________________________________________________________________________*/
+.contact_titre h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+}
+.contact_form{
+    width: 80%;
+    margin: auto;
+    background-color:rgb(74, 196, 74, .5); 
+    padding: 20px;
+    border-radius: 30px;
+    padding-left: 50px;
+}
+.coordonnees{
+   padding-left: 100px;
+}
+.coordonnees label{
+    width: 150px;
+    padding:10px;   
+}
+.coordonnees input{
+ width: 250px;
+ border-radius: 5px;
+}
+.coordonnees{
+    padding-bottom: 20px;
+}
+.situations{
+    padding-left: 30px;
+    padding-bottom: 100px;
+}
+.situations> .situation{
+    font-weight:bold;
+    padding-bottom: 10px;
+}
+.choix_region{
+    margin-left: 100px;
+    padding-bottom: 40px;
+}
+.button-contact{
+    padding-top: 30px;
+    text-align:center ;
+    box-shadow: #8fd38a;
+    }
+textarea{
+    border-radius: 5px;
+}
+.button-contact > input{
+    height: 3rem;
+    width: 6rem;
+    border-radius: 3px;
+}
+.button-contact > input:hover{
+    height: 4rem;
+    width: 7rem;
+    text-shadow: #44A33D;
+}
+/*CONTACT REPONSIVE____________________________________________________________________________________________________________*/
+
+@media screen and (max-width:576px) {
+    .contact_titre h1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .contact_form{
+        width: 90%;
+        margin: auto;
+        background-color:rgb(74, 196, 74, .5); 
+        padding: 20px;
+        border-radius: 30px;
+        padding-left: 5px;
+    }
+    #message{
+        width: 350px;
+    }
+}
+
